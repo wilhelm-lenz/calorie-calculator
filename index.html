@@ -9,20 +9,43 @@
 </head>
 
 <body>
-<header>
+  <main class="container">
+    <form class="form">
+      <h1 class="headline">Kalorienrechner</h1>
+      <label for="body-size">Körpergröße</label>
+      <input type="number" name="body-size" id="body-size" value="179">
+      <label for="age">Alter</label>
+      <input type="number" name="age" id="age" value="28">
+      <label for="weight">Gewicht</label>
+      <input type="number" name="weight" id="weight" value="72">
+      <span><input type="radio" name="gender" id="female" checked class="gender">Weiblich</span>
+      <span><input type="radio" name="gender" id="male" class="gender">Männlich</span>
+      <select name="pal-factor" id="pal-factor">
+        <option value="0.95">Schlafen</option>
+        <option value="1.2">Nur Sitzen oder Liegen</option>
+        <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der
+          Freizeit, z.B. Büroarbeit</option>
+        <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende,
+          Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+        <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker,
+          Mechaniker, Hausfrauen</option>
+        <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+      </select>
+      <input type="submit" value="Senden" class="btn-submit">
+      <article class="result">
+        <span>kcal</span>
+        <span>kJ</span>
+        <span>Grundumsatz</span>
+        <span class="base-kcal"></span>
+        <span class="base-kJ"></span>
+        <span>Gesamtumsatz</span>
+        <span class="total-kcal"></span>
+        <span class="total-kJ"></span>
+      </article>
+    </form>
+  </main>
 
-<nav>
-
-</nav>
-</header>
-<main>
-
-</main>
-<footer>
-
-</footer>
-
-<script src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

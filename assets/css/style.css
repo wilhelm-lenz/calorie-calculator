@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* =================================== */
 /* DESIGN SYSTEM */
 /* =================================== */
@@ -32,59 +33,55 @@ Default: 1
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 */
-
 /* =================================== */
 /* FONTS */
 /* =================================== */
-
 @font-face {
   font-family: "";
   src: url();
 }
-
 /* =================================== */
 /* RESET STYLES */
 /* =================================== */
-
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-}
-
-:root {
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* ------------------------ */
 /* HELPER CLASSES */
 /* ------------------------ */
-
-.container{max-width: 1440px; margin: 0 auto;}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 /* ------------------------ */
 /* GENERAL STYLES */
 /* ------------------------ */
-
 html {
-/* 10px / 16px * 100% = 62,5% */
-/* Percentage of users browser font-size setting */
-font-size: 62.5%;
+  /* 10px / 16px * 100% = 62,5% */
+  /* Percentage of users browser font-size setting */
+  font-size: 62.5%;
 }
 
 body {
-font-family: sans-serif;
-line-height: 1;
-font-weight: 400;
-color: #555;
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  height: 100vh;
+  font-size: 1.6rem;
 }
 
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
-
-/* ------ HEADER ------ */
-
 /* ------ MAIN ------ */
 
-/* ------ FOOTER ------ */
+/*# sourceMappingURL=style.css.map */
