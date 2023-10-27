@@ -40,14 +40,12 @@ submitBtnElement.addEventListener("click", () => {
   event.preventDefault();
   let pal = palFactorSelectElement.value;
   if (femaleElement.checked) {
-    console.log(calcBasalMetabolicRate(femaleElement.id));
     baseMetabolicRate = calcBasalMetabolicRate(femaleElement.id);
     baseKcalElement.textContent = baseMetabolicRate;
     baseKjElement.textContent = (baseMetabolicRate * 4.184).toFixed(2);
     totalKcalElement.textContent = (pal * baseMetabolicRate).toFixed(2);
     totalKjElement.textContent = (pal * baseMetabolicRate * 4.184).toFixed(2);
   } else if (maleElement.checked) {
-    console.log(calcBasalMetabolicRate(maleElement.id));
     baseMetabolicRate = calcBasalMetabolicRate(maleElement.id);
     baseKcalElement.textContent = baseMetabolicRate;
     baseKjElement.textContent = (baseMetabolicRate * 4.184).toFixed(2);
